@@ -769,6 +769,16 @@ in {
                 };
               };
 
+              "Pleroma.Upload" = {
+                base_url = mkOption {
+                    type = types.nonEmptyStr;
+                    description = mdDoc ''
+                      Base path which uploads will be stored at.
+                      Whilst this can just be set to a subdirectory of the main domain, it is now recommended to use a different subdomain.
+                    '';
+                };
+              };
+
               ":frontends" = mkOption {
                 type = elixirValue;
                 default = mapAttrs

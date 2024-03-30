@@ -94,6 +94,9 @@ in
             "Pleroma.Web.Endpoint" = {
               url.host = "akkoma.nixos.test";
             };
+            "Pleroma.Upload" = {
+              base_url = "https://akkoma.nixos.test/media";
+            };
           };
         };
 
