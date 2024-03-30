@@ -222,7 +222,7 @@ beamPackages.mixRelease rec {
     description = "ActivityPub microblogging server";
     homepage = "https://akkoma.social";
     license = licenses.agpl3;
-    maintainers = with maintainers; [ mvs ];
+    maintainers = with maintainers; [ mvs tcmal ];
     platforms = platforms.unix;
   };
 }
